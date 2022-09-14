@@ -1,0 +1,9 @@
+[[redirects]]
+  from = "/arc-sw.js"
+  to = "https://arc.io/arc-sw.js"
+  status = 200
+[[headers]]
+  for = "/"
+  [headers.values]
+    X-Frame-Options = "ALLOW"
+    X-XSS-Protection = "1; mode=block"

@@ -1,0 +1,32 @@
+  function passCheck() {
+    var input = document.getElementById('password').value;
+
+    if (input == '7588') {
+        alert("You Have Been Logged In!");
+        window.localStorage.setItem('valid_login', 'user');
+        window.location.href = "./private.html";
+    }
+    else {
+        alert("Wrong Credentials");
+    }
+}
+
+
+
+
+
+localStorage.getItem('valid_login', 'user');
+
+	function validateAuth() {
+		timer = setInterval(function() {
+		if (localStorage.getItem('valid_login') === 'user') {
+			
+		} else {
+            window.location.replace("/");
+		}
+		}, 10);
+	}
+	function logOut() {
+		window.localStorage.clear();
+		window.location.href = "/";
+	}

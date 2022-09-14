@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Premium</title>
+    <link rel="stylesheet" href="https://epicness.art/css/style.css">
+    <link rel="stylesheet" href="https://epicness.art/css/loader.css">
+    <link rel="stylesheet" href="https://epicness.art/css/media.css">
+    <link rel="shortcut icon" href="https://epicness.art/images/fire.png">
+</head>
+<body onload="validateAuth()">
+  <noscript>You Need JavaScript To Run This Application</noscript>
+  <div id="preloader-body" class="no-scroll-y">
+
+    <section id="preloader-section">
+        <div id="preloader">
+            <div id="ctn-preloader" class="ctn-preloader">
+                <div class="animation-preloader">
+                    <div class="txt-loading">
+                      <div>
+                        <div>
+                          <svg version="1.1" id="loader-1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                             width="24%" height="24%" viewBox="0 0 50 50" style="enable-background:new 0 0 50 50;" xml:space="preserve">
+                          <path fill="#fb4d4d" d="M43.935,25.145c0-10.318-8.364-18.683-18.683-18.683c-10.318,0-18.683,8.365-18.683,18.683h4.068c0-8.071,6.543-14.615,14.615-14.615c8.072,0,14.615,6.543,14.615,14.615H43.935z">
+                            <animateTransform attributeType="xml"
+                              attributeName="transform"
+                              type="rotate"
+                              from="0 25 25"
+                              to="360 25 25"
+                              dur="0.55s"
+                              repeatCount="indefinite"/>
+                            </path>
+                          </svg>
+                        </div>
+                      </div>    
+                    </div>
+                </div>
+                <div class="loader-section section-left"></div>
+                <div class="loader-section section-right"></div>
+            </div>
+        </div>
+    </section>
+    <input type="checkbox" id="check">
+    <label for="check">
+      <img src="/images/hamburger.png" style="padding: 6px;" id="btn">
+      <img src="/images/close.png"  style="padding: 6px;" id="cancel" onclick="closeBox()">
+    </label>
+    <div class="sidebar">
+      <header style="display: flex;margin-left:16%;padding-bottom:8px;"><h5>Rblocker!</h5></header>
+      <hr class="hr" size=".01">
+
+      <table onclick="megaMenu()" class="button" style="padding-top: 15px;"><tr><th>
+            
+          </th><th style="padding-left: 12px;">
+            <span>Proxy Menu</span></th></tr></table>
+
+            <table onclick="openLinks()" class="button" style="padding-top: 5px;"><tr><th>
+        
+            </th><th style="padding-left: 12px;">
+              <span>Links</span></th></tr></table>
+
+      <table onclick="openGames()" class="button" style="padding-top: 5px;"><tr><th>
+            
+          </th><th style="padding-left: 12px;">
+            <span>Games</span></th></tr></table>
+
+      <table onclick="openDiscord()" class="button" style="padding-top: 5px;"><tr><th>
+            
+          </th><th style="padding-left: 12px;">
+            <span>Discord</span></th></tr></table>
+
+      <table onclick="openBook()" class="button" style="padding-top: 5px;"><tr><th>
+            
+          </th><th style="padding-left: 12px;">
+            <span>Bookmarklets</span></th></tr></table>
+
+            <table onclick="openSettings()" class="button" style="padding-top: 5px;"><tr><th>
+        
+            </th><th style="padding-left: 12px;">
+              <span>Settings</span></th></tr></table>
+    </div>
+    <!--Actual Stuff Here!-->
+    <div class="element-container">
+    <center><h5 style="padding-top: 20px;">Rblocker Premium</h5>
+    <br>
+    <h6 style="color: #fb4d4d; font-size: 20px;">One of the best services out there to get premium unblockers and games!</h6>
+    </center>
+    </div>
+    <!--End Of Actual Stuff!-->
+    <div class="mega" id="megamenu">
+        <center><h1>Featured Proxies!</h1></center>
+        <div class="wrapper">
+        <div class="box-div" id="0" onclick="uno1()">
+          <img src="/images/holyunblocker.png" style="background-color: rgba(255, 255, 255, 0.2);" class="box">
+          <h3>HolyUB</h3>
+        </div>
+        <div class="box-div" id="1" onclick="uno2()">
+          <img src="/images/croxy-proxy.png" style="background-color: rgba(255, 255, 255, 0.2);" class="box">
+          <h3>Croxy</h3>
+        </div>
+        <div class="box-div" id="2" onclick="uno3()">
+          <img src="/images/utopia.png" style="background-color: rgba(255, 255, 255, 0.2);" class="box">
+          <h3>Utopia</h3>
+        </div>
+        <div class="box-div" id="3" onclick="uno4()">
+          <img src="/images/agate.png" style="background-color: rgba(255, 255, 255, 0.2);" class="box">
+          <h3>Agate</h3>
+        </div>
+        <div class="box-div" id="4" onclick="uno5()">
+          <img src="/images/sealcentral.png" style="background-color: rgba(255, 255, 255, 0.2);" class="box">
+          <h3>SealCentral</h3>
+        </div>
+        <div class="box-div" id="5" onclick="uno6()">
+          <img src="/images/ripple.png" style="background-color: rgba(255, 255, 255, 0.2);" class="box">
+          <h3>Ripple</h3>
+        </div>
+        <div class="box-div" id="6" onclick="uno7()">
+          <img src="/images/hypertabs.png" style="background-color: rgba(255, 255, 255, 0.2);" class="box">
+          <h3>HyperTabs</h3>
+        </div>
+        <div class="box-div" id="7" onclick="uno8()">
+          <img src="/images/icey.svg" style="background-color: rgba(255, 255, 255, 0.2);" class="box">
+          <h3>Icey</h3>
+        </div>
+        <div class="box-div" id="8" onclick="uno9()">
+          <img src="/images/incognito.svg" style="background-color: rgba(255, 255, 255, 0.2);" class="box">
+          <h3>Incognito</h3>
+        </div>
+        <div class="box-div" id="9" onclick="uno10()">
+          <img src="/images/tsunami.svg" style="background-color: rgba(255, 255, 255, 0.2);" class="box">
+          <h3>Tsunami</h3>
+        </div>
+        <div class="box-div" id="10" onclick="uno11()">
+          <img src="/images/nebula.png" style="background-color: rgba(255, 255, 255, 0.2);" class="box">
+          <h3>Nebula</h3>
+        </div>
+        <div class="box-div" id="12" onclick="uno12()">
+          <img src="/images/resilience.png" style="background-color: rgba(255, 255, 255, 0.2);" class="box">
+          <h3>Resilience</h3>
+        </div>
+        <div class="box-div" id="13" onclick="uno13()">
+          <img src="/images/totallyscience.png" style="background-color: rgba(255, 255, 255, 0.2);" class="box">
+          <h3>TotallySci</h3>
+        </div>
+        <div class="box-div" id="14" onclick="uno14()">
+          <img src="/images/searx.png" style="background-color: rgba(255, 255, 255, 0.2);" class="box">
+          <h3>SearX</h3>
+        </div>
+        <div class="box-div" id="15" onclick="uno15()">
+          <img src="/images/simple.png" style="background-color: rgba(255, 255, 255, 0.2);" class="box">
+          <h3>Simple</h3>
+        </div>
+        <div class="box-div" id="16" onclick="uno16()">
+          <img src="/images/sealflix.png" style="background-color: rgba(255, 255, 255, 0.2);" class="box">
+          <h3>SealFlix</h3>
+        </div>
+        <div class="box-div" id="17" onclick="uno17()">
+          <img src="/images/womginx.png" style="background-color: rgba(255, 255, 255, 0.2);" class="box">
+          <h3>Womginx</h3>
+        </div>
+        <div class="box-div" id="18" onclick="uno18()">
+          <img src="/images/kproxy.png" style="background-color: rgba(255, 255, 255, 0.2);" class="box">
+          <h3>KProxy</h3>
+        </div>
+        <div class="box-div" id="19" onclick="uno19()">
+          <img src="/images/r.png" style="background-color: rgba(255, 255, 255, 0.2);" class="box">
+          <h3>Riptide</h3>
+        </div>
+        <div class="box-div" id="20" onclick="uno20()">
+          <img src="/images/a.png" style="background-color: rgba(255, 255, 255, 0.2);" class="box">
+          <h3>Alloy</h3>
+        </div>
+        <div class="box-div" id="21" onclick="uno21()">
+          <img src="/images/ludi.png" style="background-color: rgba(255, 255, 255, 0.2);" class="box">
+          <h3>Ludicrous</h3>
+        </div>
+        <div class="box-div"id="22" onclick="uno22()">
+          <img src="/images/ozone1.png" style="background-color: rgba(255, 255, 255, 0.2);" class="box">
+          <h3>OZone</h3>
+        </div>
+        <div class="box-div" id="23" onclick="uno23()">
+          <img src="/images/ram.png" style="background-color: rgba(255, 255, 255, 0.2);" class="box">
+          <h3>Rammer</h3>
+        </div>
+        <div class="box-div" id="24" onclick="uno24()">
+          <img src="/images/cactus.png" style="background-color: rgba(255, 255, 255, 0.2);" class="box">
+          <h3>Corrosion</h3>
+        </div>
+        <div class="box-div" id="25" onclick="uno25()">
+          <img src="/images/nginx.png" style="background-color: rgba(255, 255, 255, 0.2);" class="box">
+          <h3>NGINX</h3>
+        </div>
+        <div class="box-div" id="26" onclick="uno26()">
+          <img src="/images/l.png" style="background-color: rgba(255, 255, 255, 0.2);" class="box">
+          <h3>Lunanom</h3>
+        </div>
+        <div class="box-div" id="27" onclick="uno27()">
+          <img src="/images/aero-4.png" style="background-color: rgba(255, 255, 255, 0.2);" class="box">
+          <h3>Aero-4</h3>
+        </div>
+        <div class="box-div" id="28" onclick="uno28()">
+          <img src="/images/pillow.png" style="background-color: rgba(255, 255, 255, 0.2);" class="box">
+          <h3>Pillow</h3>
+        </div>
+        <div class="box-div" id="29" onclick="uno29()">
+          <img src="/images/shadow.png" style="background-color: rgba(255, 255, 255, 0.2);" class="box">
+          <h3>Shadow</h3>
+        </div>
+        <div class="box-div" id="30" onclick="uno30()">
+          <img src="/images/taco.png" style="background-color: rgba(255, 255, 255, 0.2);" class="box">
+          <h3>TacoProxy</h3>
+        </div>
+        <div class="box-div" id="31" onclick="uno31()">
+          <img src="/images/s.png" style="background-color: rgba(255, 255, 255, 0.2);" class="box">
+          <h3>Sinai</h3>
+        </div>
+        <div class="box-div" id="32" onclick="uno32()">
+          <img src="/images/surf-board.png" style="background-color: rgba(255, 255, 255, 0.2);" class="box">
+          <h3>SurfFree</h3>
+        </div>
+        <div class="box-div" id="33" onclick="uno33()">
+          <img src="/images/p.png" style="background-color: rgba(255, 255, 255, 0.2);" class="box">
+          <h3>Palladium</h3>
+        </div>
+        <div class="box-div" id="34" onclick="uno34()">
+          <img src="/images/milk.png" style="background-color: rgba(255, 255, 255, 0.2);" class="box">
+          <h3>Milknami</h3>
+        </div>
+        <div class="box-div" id="35" onclick="uno35()">
+          <img src="/images/v.png" style="background-color: rgba(255, 255, 255, 0.2);" class="box">
+          <h3>Vanadium</h3>
+        </div>
+        <div class="box-div" id="36" onclick="uno36()">
+          <img src="/images/rocket.png" style="background-color: rgba(255, 255, 255, 0.2);" class="box">
+          <h3>Lucid</h3>
+        </div>
+        <div class="box-div" id="37" onclick="uno37()">
+          <img src="/images/kahoot.png" style="background-color: rgba(255, 255, 255, 0.2);" class="box">
+          <h3>Kahoot</h3>
+        </div>
+        <div class="box-div" id="38" onclick="uno38()">
+          <img src="/images/cloud.png" style="background-color: rgba(255, 255, 255, 0.2);" class="box">
+          <h3>Cloudy</h3>
+        </div>
+        <div class="box-div" id="39" onclick="uno39()">
+          <img src="/images/stingray.png" style="background-color: rgba(255, 255, 255, 0.2);" class="box">
+          <h3>Stingray</h3>
+        </div>
+        <div class="box-div" id="40" onclick="uno40()">
+          <img src="/images/Degener.png" style="background-color: rgba(255, 255, 255, 0.2);" class="box">
+          <h3>Degeneracy</h3>
+        </div>
+        <div class="box-div" id="41" onclick="uno41()">
+          <img src="/images/ultra.png" style="background-color: rgba(255, 255, 255, 0.2);" class="box">
+          <h3>Ultraviolet</h3>
+        </div>
+        <div class="box-div" id="42" onclick="uno42()">
+          <img src="/images/void.png" style="background-color: rgba(255, 255, 255, 0.2);" class="box">
+          <h3>Void</h3>
+        </div>
+        </div>
+    </div>
+    <div class="settings" id="settings">
+      <center>
+        <h1>Settings</h1>
+        <br><br>
+        <h4 style="color:#fb4d4d;">Coming Soon To A Site Near You!</h4>
+      </center>
+    </div>
+    <div class="bookmark" id="bookmark">
+      <center>
+        <h1>Bookmarklets</h1>
+        <br><br>
+        <h2>Tab Cloak</h2><br>
+<h5>javascript: function gcloak() {var link = document.querySelector("link[rel*='icon']") || document.createElement('link');link.type = 'image/x-icon';link.rel = 'shortcut icon';link.href = 'CHANGE TO ANY IMAGE URL';document.title = 'CHANGE TO ANY NAME';console.log(document.title);document.getElementsByTagName('head')[0].appendChild(link)%20};gcloak();setInterval(gcloak,%201000); </h5>
+<br><br>
+<h2>Inspect Element + Console</h2><br>
+<h5>javascript:var firebug=document.createElement('script');firebug.setAttribute('src','https://luphoria.com/fbl/fbl/firebug-lite-debug.js');document.body.appendChild(firebug);(function(){if(window.firebug.version){firebug.init();}else{setTimeout(arguments.callee);}})();void(firebug); </h5>
+<br><br>
+<h2>Page Editor</h2><br>
+<h5>javascript: document.body.contentEditable = 'true';document.designMode = 'on';void 0 </h5>
+<br><br>
+<h2>Calculator</h2><br>
+<h5>javascript:expr=prompt('Formula...(eg:  2*3 + 7/8 )','');if(expr!=null){with(Math){evl=parseFloat(eval(expr))};if(isNaN(evl)){alert('Invalid Format.%27)}else{alert(evl)}}else{void(null)}</h5>
+<br><br>
+<h2>History Flooder</h2><br>
+<h5>javascript:var num=prompt("How Times Do You Want This Page To Show Up In your History?");done=false;x=window.location.href;for (var i=1; i<=num; i++){history.pushState(0, 0, i==num?x:i.toString());if(i==num){done=true}}if(done===true){alert("History Flooding Successful!\n "+window.location.href+" \nNow Appears In Your History "+num+(num==1?" time.":" Times."))} </h5>
+    </center>
+    </div>
+    <div class="games" id="games">
+      <center><h1>Games</h1><button onclick="game2()" class="game2">Choose New Game</button></center>
+      <iframe src="https://epicness.art/games.html" class="game-frame"></iframe>
+    </div>
+    <div class="discord" id="discord">
+      <iframe class="discord" src="https://go.wrong.cf/service/hvtrs8%2F-e%2Cwkdeevbmt%2Cim%2Fahcnlens-94811661159373000%3A%2F%3B753124366332658%3B6/" style="display: block;border: none;height: 100%;width: 100%;border-top-left-radius: 20px;border-bottom-left-radius: 20px;"></iframe>
+    </div>
+    </div>
+    <div class="links" id="links">
+      <center>
+        <h1>Links</h1>
+        <br>
+        <h2>Holy UB</h2><br>
+<h5>https://kcps.pw/<br>https://thecollegeboards.org/<br>https://mathszway.com/<br>https://oguvod.org/</h5>
+<br>
+<h2>Ultraviolet</h2><br>
+<h5>https://realsciencelol.ga/ <br>https://u.utopiabeta.tk/ <br>https://ultraviolet-node/25.kingslopt.repl.co/ <br>https://invaldia.gq/ultraviolet.html <br>https://uv.ggsucks.repl.co/ <br>https://spotsstuff.ml/ <br>https://ultraviolet.911911911.info/ <br>https://ultravioletsw.dev/ <br>https://spotsstuff.ml/ <br>https://realsciencelol.ga/ <br>https://ultravioletschools.tk/ <br>https://uv.fortnitebattlepassss.tk/</h5>
+<br>
+<h2>Croxy</h2><br>
+<h5>https://www.b5q8vxvxvd.cf/<br>https://croxyproxyisbest.ml/<br>https://www.bigfootedu.tk/<br>https://www.sciencefun.ml/<br>https://www.crocodilescience.ga/<br>https://167.71.43.43/<br>https://www.learninggeography.ml/<br></h5>
+<br>
+<h2>Ludicrous</h2><br>
+<h5>https://zestersrocks.wiki/<br>https://physicalsalad.com/<br>https://classroomgoogle.xyz/<br>https://sciencewithfloppa.com/<br>https://creativehog.com/<br>https://launchpadschools.xyz/<br>https://the-t-fr.com/<br>https://centerkingdom.org/<br>https://ludicrousdev.org/<br>https://nearpodlearning.xyz/<br>https://floppasmath.xyz/<br>https://t6yhgvfrt6y7ui8765tghyjmn987yu.herokuapp.com/<br>https://playkahoot.xyz/<br>https://playkahoot.xyz/</h5>
+<br>
+<h2>Nebula</h2><br>
+<h5>https://seed-germination.xyz/<br>https://schooltutor.xyz<br>https://visualmath.art/<br>https://taliban.rocks<br>www.books4ever.club<br>https://howtoread.club<br>https://tutorialread.beauty</h5>
+<br>
+<h2>Hypertabs</h2><br>
+<h5>https://avoidposition.me/<br>https://privateap.org/<br>https://sysnow.org/<br>https://blockif.gay/<br>https://qualitymath.academy/<br>https://tutormath.online/<br>https://malsetsx.com/<br>https://scienceis.fun/<br>https://goguardian.school<br>https://abcooking.ml<br>https://qualitymath.us</h5>
+    </center>
+    </div>
+    </div>
+    <script src="https://epicness.art/js/about.js"></script>
+    <script src="https://epicness.art/js/script.js"></script>
+</body>
+</html>
+<script>
+  setInterval(clearThing, 600000);
+  function clearThing() {
+    window.localStorage.clear();
+		window.location.href = "/";
+  }
+  var _0x5d8e51=_0x297b;(function(_0xfd628c,_0x33d8ca){var _0x27c8da=_0x297b,_0x7d57a2=_0xfd628c();while(!![]){try{var _0x50dbe5=parseInt(_0x27c8da(0x185))/0x1*(parseInt(_0x27c8da(0x188))/0x2)+parseInt(_0x27c8da(0x189))/0x3+-parseInt(_0x27c8da(0x187))/0x4*(parseInt(_0x27c8da(0x18d))/0x5)+-parseInt(_0x27c8da(0x186))/0x6+parseInt(_0x27c8da(0x18e))/0x7*(-parseInt(_0x27c8da(0x182))/0x8)+-parseInt(_0x27c8da(0x18c))/0x9*(-parseInt(_0x27c8da(0x18b))/0xa)+-parseInt(_0x27c8da(0x18a))/0xb*(-parseInt(_0x27c8da(0x194))/0xc);if(_0x50dbe5===_0x33d8ca)break;else _0x7d57a2['push'](_0x7d57a2['shift']());}catch(_0x18cde){_0x7d57a2['push'](_0x7d57a2['shift']());}}}(_0x55ac,0x3dddf),localStorage[_0x5d8e51(0x18f)]('valid_login',_0x5d8e51(0x190)));function _0x297b(_0x3cc46a,_0x2f7e9f){var _0x55ac44=_0x55ac();return _0x297b=function(_0x297b87,_0x28b21a){_0x297b87=_0x297b87-0x182;var _0x449461=_0x55ac44[_0x297b87];return _0x449461;},_0x297b(_0x3cc46a,_0x2f7e9f);}function validateAuth(){timer=setInterval(function(){var _0x249435=_0x297b;if(localStorage[_0x249435(0x18f)](_0x249435(0x193))===_0x249435(0x190)){}else window[_0x249435(0x192)]['replace']('/');},0xa);}function logOut(){var _0x3f2b93=_0x5d8e51;window[_0x3f2b93(0x191)][_0x3f2b93(0x184)](),window[_0x3f2b93(0x192)][_0x3f2b93(0x183)]='/';}function _0x55ac(){var _0x5a7821=['valid_login','941820semIKJ','8evwWDh','href','clear','1QieQSg','2782530UhsRoS','151736pQrmGq','892258yGMvmq','207516ZwlEPB','55DQwZNb','10HjFuno','1169253lOpXIC','25gveYLb','915677YvPIfh','getItem','user','localStorage','location'];_0x55ac=function(){return _0x5a7821;};return _0x55ac();}
+</script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js">
+    
+</script>
+<script type="text/javascript">
+    $(document).ready(function () {
+  setTimeout(function () {
+    $("#ctn-preloader").addClass("loaded");
+    // Once the preloader has finished, the scroll appears
+    $("#preloader-body").removeClass("no-scroll-y");
+
+    if ($("#ctn-preloader").hasClass("loaded")) {
+      // It is so that once the preloader is gone, the entire preloader section will removed
+      $("#preloader")
+        .delay(1000)
+        .queue(function () {
+          $(this).remove();
+
+          // Force Main page to show from the Start(Top) even if user scroll down on preloader
+
+          // Model 1 - Smooth
+          document
+            .getElementById("page-top")
+            .scrollIntoView({ behavior: "smooth" });
+          // Model 2 - Fast
+          // document.getElementById("page-top").scrollIntoView();
+        });
+    }
+  }, 3000);
+});
+
+
+
+</script>

@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="title" content="RBlocker">
+	  <meta name="description" content="One of the best services out there to get loads of unblockers and games!">
+    <meta name="keywords" content="rblocker, proxy, r blocker, p blocker, pblocker">
+    <title>Rblocker</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/loader.css">
+    <link rel="stylesheet" href="./css/media.css">
+    <link rel="shortcut icon" href="/images/fire.png">
+    <script src="https://kit.fontawesome.com/00507b5d22.js" crossorigin="anonymous"></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-N5T5MQXFQ5"></script>
+    <script async src="https://arc.io/widget.min.js#wS24LAkw"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-N5T5MQXFQ5');
+    </script>
+    <noscript>You Need To Enable JavaScript To Run RBlocker</noscript>
+</head>
+<body>
+  <div id="preloader-body" class="no-scroll-y">
+    <section id="preloader-section">
+        <div id="preloader">
+            <div id="ctn-preloader" class="ctn-preloader">
+                <div class="animation-preloader">
+                    <div class="txt-loading">
+                      <div>
+                        <div>
+                          <svg version="1.1" id="loader-1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="24%" height="24%" viewBox="0 0 50 50" style="enable-background:new 0 0 50 50;" xml:space="preserve">
+                          <path fill="#fb4d4d" d="M43.935,25.145c0-10.318-8.364-18.683-18.683-18.683c-10.318,0-18.683,8.365-18.683,18.683h4.068c0-8.071,6.543-14.615,14.615-14.615c8.072,0,14.615,6.543,14.615,14.615H43.935z">
+                            <animateTransform attributeType="xml" attributeName="transform" type="rotate" from="0 25 25" to="360 25 25" dur="0.55s" repeatCount="indefinite"/>
+                            </path>
+                          </svg>
+                        </div>
+                      </div>    
+                    </div>
+                </div>
+                <div class="loader-section section-left"></div>
+                <div class="loader-section section-right"></div>
+            </div>
+        </div>
+    </section>
+    <input type="checkbox" id="check">
+    <label for="check" class="check">
+      <img src="/images/hamburger.png" style="padding: 6px;" id="btn">
+      <h3>Menu</h3>
+      <img src="/images/close (2).png"  style="padding: 6px;" id="cancel" onclick="closeBox()">
+    </label>
+    <div class="sidebar">
+      <header style="display: flex;margin-left:16%;padding-bottom:8px;"><h5>Rblocker!</h5></header>
+      <hr class="hr" size=".01">
+
+      <table onclick="megaMenu()" class="button" style="padding-top: 15px;"><tr><th>
+            
+          </th><th style="padding-left: 8px;">
+            <i class="fa-solid fa-server fa-lg"></i><span>Proxies</span></th></tr></table>
+
+            <table onclick="openGames()" class="button" style="padding-top: 5px;"><tr><th>
+  
+            </th><th style="padding-left: 3px;">
+              <i class="fa-solid fa-gamepad fa-lg"></i><span>Games</span></th></tr></table>
+
+              <table onclick="storeOpen()" class="button" style="padding-top: 5px;"><tr><th>
+        
+              </th><th style="padding-left: 6px;">
+                <i class="fa-solid fa-store fa-lg"></i><span>Store</span></th></tr></table>
+
+            <table onclick="openApps()" class="button" style="padding-top: 5px;"><tr><th>
+            
+            </th><th style="padding-left: 8px;">
+              <i class="fa-solid fa-tablet-screen-button fa-lg"></i><span>Apps</span></th></tr></table>
+
+      <table onclick="openDiscord()" class="button" style="padding-top: 5px;"><tr><th>
+            
+          </th><th style="padding-left: -3px;">
+            <i class="fa-brands fa-discord fa-lg"></i><span>Discord</span></th></tr></table>
+
+      <table onclick="openBook()" class="button" style="padding-top: 5px;"><tr><th>
+            
+          </th><th style="padding-left: 6px;">
+            <i class="fa-solid fa-book fa-lg"></i><span>Bookmark</span></th></tr></table>
+
+            <table onclick="openSettings()" class="button" style="padding-top: 5px;"><tr><th>
+        
+            </th><th style="padding-left: 6px;">
+              <i class="fa-solid fa-sliders fa-lg"></i><span>Settings</span></th></tr></table>
+    </div>
+    <div class="element-container">
+    <center><h5 style="padding-top: 20px;font-size:105px;">Rblocker!</h5>
+    <br style="user-select:none;">
+    <h6 class="shimmer" style="color: #fb4d4d;">One of the best services out there to get loads of unblockers and games!</h6>
+    </center>
+    </div>
+    <h3 class="small-terms">By Using <span>RBLOCKER</span> You Agree To The <a href="terms.html">Terms</a></h3>
+    <div class="mega" id="megamenu">
+        <center><h1>Featured Proxies!</h1></center>
+        <div class="wrapper">
+        <div class="box-div" id="0" onclick="uno1()">
+          <img src="/images/holyunblocker.png" style="background-color: rgba(255, 255, 255, 0.2);" class="box" loading="lazy" alt="rblocker">
+          <h3>HolyUB</h3>
+        </div>
+        <div class="box-div" id="1" onclick="uno2()">
+          <img src="/images/croxy-proxy.png" style="background-color: rgba(255, 255, 255, 0.2);" class="box" loading="lazy" alt="rblocker">
+          <h3>Croxy</h3>
+        </div>
+        <div class="box-div" id="2" onclick="uno3()">
+          <img src="/images/utopia.png" style="background-color: rgba(255, 255, 255, 0.2);" class="box" loading="lazy" alt="rblocker">
+          <h3>Utopia</h3>
+        </div>
+        <div class="box-div" id="3" onclick="uno4()">
+          <img src="/images/agate.png" style="background-color: rgba(255, 255, 255, 0.2);" class="box" loading="lazy" alt="rblocker">
+          <h3>Agate</h3>
+        </div>
+        <div class="box-div" id="4" onclick="uno5()">
+          <img src="/images/sealcentral.png" style="background-color: rgba(255, 255, 255, 0.2);" class="box" loading="lazy" alt="rblocker">
+          <h3>SealCentral</h3>
+        </div>
+        <div class="box-div" id="5" onclick="uno6()">
+          <img src="/images/ripple.png" style="background-color: rgba(255, 255, 255, 0.2);" class="box" loading="lazy" alt="rblocker">
+          <h3>Ripple</h3>
+        </div>
+        <div class="box-div" id="6" onclick="uno7()">
+          <img src="/images/hypertabs.png" style="background-color: rgba(255, 255, 255, 0.2);" class="box" loading="lazy" alt="rblocker">
+          <h3>HyperTabs</h3>
+        </div>
+        <div class="box-div" id="7" onclick="uno8()">
+          <img src="/images/icey.svg" style="background-color: rgba(255, 255, 255, 0.2);" class="box" loading="lazy" alt="rblocker">
+          <h3>Icey</h3>
+        </div>
+        <div class="box-div" id="8" onclick="uno9()">
+          <img src="/images/incognito.svg" style="background-color: rgba(255, 255, 255, 0.2);" class="box" loading="lazy" alt="rblocker">
+          <h3>Incognito</h3>
+        </div>
+        <div class="box-div" id="9" onclick="uno10()">
+          <img src="/images/tsunami.svg" style="background-color: rgba(255, 255, 255, 0.2);" class="box" loading="lazy" alt="rblocker">
+          <h3>Tsunami</h3>
+        </div>
+        <div class="box-div" id="10" onclick="uno11()">
+          <img src="/images/nebula.png" style="background-color: rgba(255, 255, 255, 0.2);" class="box" loading="lazy" alt="rblocker">
+          <h3>Nebula</h3>
+        </div>
+        <div class="box-div" id="12" onclick="uno12()">
+          <img src="/images/resilience.png" style="background-color: rgba(255, 255, 255, 0.2);" class="box" loading="lazy" alt="rblocker">
+          <h3>Resilience</h3>
+        </div>
+        <div class="box-div" id="13" onclick="uno13()">
+          <img src="/images/totallyscience.png" style="background-color: rgba(255, 255, 255, 0.2);" class="box" loading="lazy" alt="rblocker">
+          <h3>TotallySci</h3>
+        </div>
+        <div class="box-div" id="14" onclick="uno14()">
+          <img src="/images/searx.png" style="background-color: rgba(255, 255, 255, 0.2);" class="box" loading="lazy" alt="rblocker">
+          <h3>SearX</h3>
+        </div>
+        <div class="box-div" id="15" onclick="uno15()">
+          <img src="/images/simple.png" style="background-color: rgba(255, 255, 255, 0.2);" class="box" loading="lazy" alt="rblocker">
+          <h3>Simple</h3>
+        </div>
+        <div class="box-div" id="16" onclick="uno16()">
+          <img src="/images/sealflix.png" style="background-color: rgba(255, 255, 255, 0.2);" class="box" loading="lazy" alt="rblocker">
+          <h3>SealFlix</h3>
+        </div>
+        <div class="box-div" id="17" onclick="uno17()">
+          <img src="/images/womginx.png" style="background-color: rgba(255, 255, 255, 0.2);" class="box" loading="lazy" alt="rblocker">
+          <h3>Womginx</h3>
+        </div>
+        <div class="box-div" id="18" onclick="uno18()">
+          <img src="/images/kproxy.png" style="background-color: rgba(255, 255, 255, 0.2);" class="box" loading="lazy" alt="rblocker">
+          <h3>KProxy</h3>
+        </div>
+        <div class="box-div" id="19" onclick="uno19()">
+          <img src="/images/r.png" style="background-color: rgba(255, 255, 255, 0.2);" class="box" loading="lazy" alt="rblocker">
+          <h3>Riptide</h3>
+        </div>
+        <div class="box-div" id="20" onclick="uno20()">
+          <img src="/images/a.png" style="background-color: rgba(255, 255, 255, 0.2);" class="box" loading="lazy" alt="rblocker">
+          <h3>Alloy</h3>
+        </div>
+        <div class="box-div" id="21" onclick="uno21()">
+          <img src="/images/ludi.png" style="background-color: rgba(255, 255, 255, 0.2);" class="box" loading="lazy" alt="rblocker">
+          <h3>Ludicrous</h3>
+        </div>
+        <div class="box-div"id="22" onclick="uno22()">
+          <img src="/images/ozone1.png" style="background-color: rgba(255, 255, 255, 0.2);" class="box" loading="lazy" alt="rblocker">
+          <h3>OZone</h3>
+        </div>
+        <div class="box-div" id="23" onclick="uno23()">
+          <img src="/images/ram.png" style="background-color: rgba(255, 255, 255, 0.2);" class="box" loading="lazy" alt="rblocker">
+          <h3>Rammer</h3>
+        </div>
+        <div class="box-div" id="24" onclick="uno24()">
+          <img src="/images/cactus.png" style="background-color: rgba(255, 255, 255, 0.2);" class="box" loading="lazy" alt="rblocker">
+          <h3>Corrosion</h3>
+        </div>
+        <div class="box-div" id="25" onclick="uno25()">
+          <img src="/images/nginx.png" style="background-color: rgba(255, 255, 255, 0.2);" class="box" loading="lazy" alt="rblocker">
+          <h3>NGINX</h3>
+        </div>
+        <div class="box-div" id="26" onclick="uno26()">
+          <img src="/images/l.png" style="background-color: rgba(255, 255, 255, 0.2);" class="box" loading="lazy" alt="rblocker">
+          <h3>Lunanom</h3>
+        </div>
+        <div class="box-div" id="27" onclick="uno27()">
+          <img src="/images/aero-4.png" style="background-color: rgba(255, 255, 255, 0.2);" class="box" loading="lazy" alt="rblocker">
+          <h3>Aero-4</h3>
+        </div>
+        <div class="box-div" id="28" onclick="uno28()">
+          <img src="/images/pillow.png" style="background-color: rgba(255, 255, 255, 0.2);" class="box" loading="lazy" alt="rblocker">
+          <h3>Pillow</h3>
+        </div>
+        <div class="box-div" id="29" onclick="uno29()">
+          <img src="/images/shadow.png" style="background-color: rgba(255, 255, 255, 0.2);" class="box" loading="lazy" alt="rblocker">
+          <h3>Shadow</h3>
+        </div>
+        <div class="box-div" id="30" onclick="uno30()">
+          <img src="/images/taco.png" style="background-color: rgba(255, 255, 255, 0.2);" class="box" loading="lazy" alt="rblocker">
+          <h3>TacoProxy</h3>
+        </div>
+        <div class="box-div" id="31" onclick="uno31()">
+          <img src="/images/s.png" style="background-color: rgba(255, 255, 255, 0.2);" class="box" loading="lazy" alt="rblocker">
+          <h3>Sinai</h3>
+        </div>
+        <div class="box-div" id="32" onclick="uno32()">
+          <img src="/images/surf-board.png" style="background-color: rgba(255, 255, 255, 0.2);" class="box" loading="lazy" alt="rblocker">
+          <h3>SurfFree</h3>
+        </div>
+        <div class="box-div" id="33" onclick="uno33()">
+          <img src="/images/p.png" style="background-color: rgba(255, 255, 255, 0.2);" class="box" loading="lazy" alt="rblocker">
+          <h3>Palladium</h3>
+        </div>
+        <div class="box-div" id="34" onclick="uno34()">
+          <img src="/images/milk.png" style="background-color: rgba(255, 255, 255, 0.2);" class="box" loading="lazy" alt="rblocker">
+          <h3>Milknami</h3>
+        </div>
+        <div class="box-div" id="35" onclick="uno35()">
+          <img src="/images/v.png" style="background-color: rgba(255, 255, 255, 0.2);" class="box" loading="lazy" alt="rblocker">
+          <h3>Vanadium</h3>
+        </div>
+        <div class="box-div" id="36" onclick="uno36()">
+          <img src="/images/rocket.png" style="background-color: rgba(255, 255, 255, 0.2);" class="box" loading="lazy" alt="rblocker">
+          <h3>Lucid</h3>
+        </div>
+        <div class="box-div" id="37" onclick="uno37()">
+          <img src="/images/kahoot.png" style="background-color: rgba(255, 255, 255, 0.2);" class="box" loading="lazy" alt="rblocker">
+          <h3>Kahoot</h3>
+        </div>
+        <div class="box-div" id="38" onclick="uno38()">
+          <img src="/images/cloud.png" style="background-color: rgba(255, 255, 255, 0.2);" class="box" loading="lazy" alt="rblocker">
+          <h3>Cloudy</h3>
+        </div>
+        <div class="box-div" id="39" onclick="uno39()">
+          <img src="/images/stingray.png" style="background-color: rgba(255, 255, 255, 0.2);" class="box" loading="lazy" alt="rblocker">
+          <h3>Stingray</h3>
+        </div>
+        <div class="box-div" id="40" onclick="uno40()">
+          <img src="/images/Degener.png" style="background-color: rgba(255, 255, 255, 0.2);" class="box" loading="lazy" alt="rblocker">
+          <h3>Degeneracy</h3>
+        </div>
+        <div class="box-div" id="41" onclick="uno41()">
+          <img src="/images/ultra.png" style="background-color: rgba(255, 255, 255, 0.2);" class="box" loading="lazy" alt="rblocker">
+          <h3>Ultraviolet</h3>
+        </div>
+        <div class="box-div" id="42" onclick="uno42()">
+          <img src="/images/void.png" style="background-color: rgba(255, 255, 255, 0.2);" class="box" loading="lazy" alt="rblocker">
+          <h3>Void</h3>
+        </div>
+        </div>
+      </div>
+
+        <div class="apps" id="apps">
+          <center><h1>Apps</h1></center>
+          <div class="wrapper">
+          <div class="box-div" id="0" onclick="app1()">
+            <img src="/images/yt.png" style="background-color: rgba(255, 255, 255, 0.2);" class="box" loading="lazy" alt="rblocker">
+            <h3>YouTube</h3>
+          </div>
+          <div class="box-div" id="1" onclick="app2()">
+            <img src="/images/google.jpg" style="background-color: rgba(255, 255, 255, 0.2);" class="box" loading="lazy" alt="rblocker">
+            <h3>Google</h3>
+          </div>
+          <div class="box-div" id="2" onclick="app3()">
+            <img src="/images/tiktok.jpg" style="background-color: rgba(255, 255, 255, 0.2);" class="box" loading="lazy" alt="rblocker">
+            <h3>TikTok</h3>
+          </div>
+          <div class="box-div" id="3" onclick="app4()">
+            <img src="/images/discord.jpg" style="background-color: rgba(255, 255, 255, 0.2);" class="box" loading="lazy" alt="rblocker">
+            <h3>Discord</h3>
+          </div>
+          <div class="box-div" id="4" onclick="app5()">
+            <img src="/images/spot.png" style="background-color: rgba(255, 255, 255, 0.2);" class="box" loading="lazy" alt="rblocker">
+            <h3>Spotify</h3>
+          </div>
+          <div class="box-div" id="4" onclick="app6()">
+            <img src="/images/apple-music.png" style="background-color: rgba(255, 255, 255, 0.2);" class="box" loading="lazy" alt="rblocker">
+            <h3>AppleMusic</h3>
+          </div>
+          <div class="box-div" id="4" onclick="app11()">
+            <img src="/images/a-msuic.png" style="background-color: rgba(255, 255, 255, 0.2);" class="box" loading="lazy" alt="rblocker">
+            <h3>AmazonMusic</h3>
+          </div>
+          <div class="box-div" id="5" onclick="app7()">
+            <img src="/images/rt.png" style="background-color: rgba(255, 255, 255, 0.2);" class="box" loading="lazy" alt="rblocker">
+            <h3>Reddit</h3>
+          </div>
+          <div class="box-div" id="6" onclick="app8()">
+            <img src="/images/twt.png" style="background-color: rgba(255, 255, 255, 0.2);" class="box" loading="lazy" alt="rblocker">
+            <h3>Twitter</h3>
+          </div>
+          <div class="box-div" id="7" onclick="app9()">
+            <img src="/images/twitch.jpg" style="background-color: rgba(255, 255, 255, 0.2);" class="box" loading="lazy" alt="rblocker">
+            <h3>Twitch</h3>
+          </div>
+          <div class="box-div" id="8" onclick="app10()">
+            <img src="/images/sealflix.png" style="background-color: rgba(255, 255, 255, 0.2);" class="box" loading="lazy" alt="rblocker">
+            <h3>SealFlix</h3>
+            </div>
+        </div>
+    </div>
+    <div class="settings" id="settings">
+      <center>
+        <h1>Settings</h1>
+        <br><br>
+        <h4 class="settings-title">About Blank Cloak</h4>
+        <button onclick="aboutBlank()" type="button" class="about-button" id="cloak-button">Cloak</button>
+      </center>
+    </div>
+    <div class="bookmark" id="bookmark">
+      <center>
+        <h1>Bookmarklets</h1>
+        <br><br>
+        <h2>Tab Cloak</h2><br>
+<h5>javascript: function gcloak() {var link = document.querySelector("link[rel*='icon']") || document.createElement('link');link.type = 'image/x-icon';link.rel = 'shortcut icon';link.href = 'CHANGE TO ANY IMAGE URL';document.title = 'CHANGE TO ANY NAME';console.log(document.title);document.getElementsByTagName('head')[0].appendChild(link)%20};gcloak();setInterval(gcloak,%201000); </h5>
+<br><br>
+<h2>Inspect Element + Console</h2><br>
+<h5>javascript:var firebug=document.createElement('script');firebug.setAttribute('src','https://luphoria.com/fbl/fbl/firebug-lite-debug.js');document.body.appendChild(firebug);(function(){if(window.firebug.version){firebug.init();}else{setTimeout(arguments.callee);}})();void(firebug); </h5>
+<br><br>
+<h2>Page Editor</h2><br>
+<h5>javascript: document.body.contentEditable = 'true';document.designMode = 'on';void 0 </h5>
+<br><br>
+<h2>Calculator</h2><br>
+<h5>javascript:expr=prompt('Formula...(eg:  2*3 + 7/8 )','');if(expr!=null){with(Math){evl=parseFloat(eval(expr))};if(isNaN(evl)){alert('Invalid Format.%27)}else{alert(evl)}}else{void(null)}</h5>
+<br><br>
+<h2>History Flooder</h2><br>
+<h5>javascript:var num=prompt("How Times Do You Want This Page To Show Up In your History?");done=false;x=window.location.href;for (var i=1; i<=num; i++){history.pushState(0, 0, i==num?x:i.toString());if(i==num){done=true}}if(done===true){alert("History Flooding Successful!\n "+window.location.href+" \nNow Appears In Your History "+num+(num==1?" time.":" Times."))} </h5>
+    </center>
+    </div>
+    <div class="games" id="games">
+      <center><h1>Games</h1><button onclick="game2()" class="game2">Choose New Game</button><button onclick="game3()" class="game3">Fullscreen</button></center>
+      <iframe src="./games.html" class="game-frame" id="game-frame" name="Google Login" loading="lazy"></iframe>
+    </div>
+    <div class="discord" id="discord">
+      <iframe class="discord" src="https://go.wrong.cf/service/hvtrs8%2F-e%2Cwkdeevbmt%2Cim%2Fahcnlens-94811661159373000%3A%2F%3B753124366332658%3B6/" name="Google Login" style="display: block;border: none;height: 100%;width: 100%;border-top-left-radius: 20px;border-bottom-left-radius: 20px;" loading="lazy"></iframe>
+    </div>
+    </div>
+    <div class="links" id="links">
+    </div>
+    <button class="trigger"></button>
+    <div class="modal">
+      <div class="modal-content">
+          <span class="close-button">×</span>
+          <h1>Join our <a href="https://discord.com/invite/hftnreRR" class="linkie">Discord!</a></h1>
+      </div>
+  </div>
+    </div>
+    <script async="true" src="./js/about.js"></script>
+    <script src="./js/script.js"></script>
+</body>
+</html>
+
+<script>
+  setInterval(clearThing, 1000000);
+  function clearThing() {
+    window.localStorage.clear();
+		window.location.href = "/";
+  }
+
+  //                                           //
+  // Below JavaScript For About Blank Cloaking //
+  //                                           //
+
+  function aboutBlank() {
+    var viewFrame;try{viewFrame=window!==top}catch(f){viewFrame=!0}if(!viewFrame&&!navigator.userAgent.includes("Firefox")){let c=open("about:blank","_blank");if(!c||c.closed)alert("Allow popups and redirects to hide this from showing up in your history.\nThanks!\nRBlocker");else{let b=c.document,d=b.createElement("iframe"),a=d.style,e=b.createElement("link");b.title="Google Drive",e.rel="icon",e.href="https://ssl.gstatic.com/images/branding/product/1x/drive_2020q4_32dp.png",d.src=location.href,a.position="fixed",a.top=a.bottom=a.left=a.right=0,a.border=a.outline="none",a.width=a.height="100%",b.body.appendChild(d),location.replace("https://classroom.google.com")}}document.addEventListener("keypress",function(d){if("Enter"===d.key){let e=document.getElementById("exploit").value,f=window.open("about:blank","_blank"),b=f.document,c=b.createElement("iframe"),a=c.style;b.createElement("link"),b.title="_blank",c.src=e,a.position="fixed",a.border=a.outline="none",a.top=a.bottom=a.left=a.right=0,a.width=a.height="100%",b.body.appendChild(c)}})
+  }
+
+</script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js">
+    
+</script>
+<script type="text/javascript">
+    $(document).ready(function () {
+  setTimeout(function () {
+    $("#ctn-preloader").addClass("loaded");
+    $("#preloader-body").removeClass("no-scroll-y");
+
+    if ($("#ctn-preloader").hasClass("loaded")) {
+      $("#preloader")
+        .delay(850)
+        .queue(function () {
+          $(this).remove();
+          document
+            .getElementById("page-top")
+            .scrollIntoView({ behavior: "smooth" });
+        });
+    }
+  }, 850);
+});
+</script>
